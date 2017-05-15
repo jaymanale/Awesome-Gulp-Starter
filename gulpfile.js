@@ -2,6 +2,14 @@ var gulp = require('gulp'),
     plugin = require('gulp-load-plugins')(),
     browserSync = require('browser-sync').create();
 
+// html task
+
+gulp.task('htmlmin', function() {
+  return gulp.src('src/*.html')
+    .pipe(plugin.htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest('./'))
+});
+
 
 // css task
 gulp.task('css' , function(){
@@ -47,4 +55,4 @@ gulp.task('serve' , function(){
 
 //default task
 
-gulp.task('default' , ['css' , 'js', 'watch' , 'serve']);
+gulp.task('default' , ['htmlmin','css' , 'js', 'watch' , 'serve']);
