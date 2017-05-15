@@ -7,7 +7,7 @@ var gulp = require('gulp'),
 gulp.task('htmlmin', function() {
   return gulp.src('src/*.html')
     .pipe(plugin.htmlmin({collapseWhitespace: true}))
-    .pipe(gulp.dest('./'))
+    .pipe(gulp.dest('./index.html'))
 });
 
 
@@ -55,4 +55,4 @@ gulp.task('serve' , function(){
 
 //default task
 
-gulp.task('default' , ['htmlmin','css' , 'js', 'watch' , 'serve']);
+gulp.task('default' , ['css' , 'js', 'watch' , 'serve']);
