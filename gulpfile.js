@@ -31,6 +31,16 @@ gulp.task('js' , function(){
     .pipe(gulp.dest('./dist/js'))
     .pipe(browserSync.stream());
 });
+//image
+gulp.task('img' , function(){
+    return gulp.src(['./src/img/*'])
+    .pipe(plugin.imagemin())
+    .pipe(gulp.dest('./dist/img'));
+    // .pipe(browserSync.stream());
+});
+
+
+
 
 //watch file for changes
 
@@ -55,4 +65,4 @@ gulp.task('serve' , function(){
 
 //default task
 
-gulp.task('default' , ['css' , 'js', 'watch' , 'serve']);
+gulp.task('default' , ['css' , 'js','img', 'watch' , 'serve']);

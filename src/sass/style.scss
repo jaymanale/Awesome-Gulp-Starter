@@ -1,3 +1,24 @@
 body{
-    font-family: 'Roboto', sans-serif;
+     font-family: 'Roboto', sans-serif;
+   
 }
+ @font-face{
+    font-family: "Starway";
+    src: url('../font/Starway.otf') format('opentype');
+ }
+ @mixin font{
+ font-family: 'Starway', sans-serif;
+ }
+ .navbar-brand{
+     @include font;
+ }
+ .jumbotron h1{
+     @include font;
+     font-size: 180px;
+
+ }
+ .me{
+     width: 100px;
+     height: 100px;
+     margin: 0 auto;
+ }
