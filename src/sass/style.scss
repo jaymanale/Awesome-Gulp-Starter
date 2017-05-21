@@ -1,10 +1,14 @@
 body{
-     font-family: 'Roboto', sans-serif;
+     font-family: 'Roboto-Light', sans-serif;
    
 }
  @font-face{
     font-family: "Starway";
     src: url('../font/Starway.otf') format('opentype');
+ }
+  @font-face{
+    font-family: "Roboto-Light";
+    src: url('../font/Roboto-Light.ttf');
  }
  @mixin font{
  font-family: 'Starway', sans-serif;
@@ -22,6 +26,8 @@ background: linear-gradient(to right, #061161, #780206); /* W3C, IE 10+/ Edge, F
 padding:200px 0;
 }
 
+
+
  #intro h1{
      @include font;
      font-size: 180px;
@@ -29,5 +35,22 @@ padding:200px 0;
      
 
  }
-
+ .me{
+     width: 10em;
+     height: 10em;
+     margin: 0 auto;
+ }
+.icon{
+    font-size: 6em;
+    padding: 0.3em;
     
+}
+    // screen size less than 768
+@media screen and (max-width :768px ){
+        
+            #intro h1{
+            @include font;
+            font-size: 100px;
+            color: #fff;
+        }
+}
