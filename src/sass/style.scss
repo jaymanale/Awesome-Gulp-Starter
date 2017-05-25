@@ -1,141 +1,206 @@
-body{
-     font-family: 'Roboto-Light', sans-serif;
-   
-}
-p{
-    font-size: 1.2em;
-}
-@font-face{
+@font-face {
     font-family: "Starway";
     src: url('../font/Starway.otf') format('opentype');
- }
-  @font-face{
+}
+
+@font-face {
     font-family: "Roboto-Light";
     src: url('../font/Roboto-Light.ttf');
- }
- @mixin font{
- font-family: 'Starway', sans-serif;
- }
- @mixin shadow{
-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);    
- }
-
-main header{
-     width: 100%;
-    height: 100%;
-    overflow: hidden;
-    transform: skewY(-3.5deg);
-    transform-origin: 0;
-     background: #780206;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #061161, #780206);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #061161, #780206); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-padding:200px 0;
 }
 
-
- section{
-     width:100%;
-    padding:50px 0;
-
- }
-.row{
-    margin:30px 0;
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url('../font/Roboto-Bold.ttf');
 }
- 
 
- #intro h1{
-     @include font;
-     font-size: 180px;
+@mixin font {
+    font-family: 'Starway', sans-serif;
+}
+
+@mixin shadow {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+body {
+    font-family: 'Roboto-Light', sans-serif;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+main header {
+    background: #780206;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #061161, #780206);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #061161, #780206);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 120px 0 60px 0;
+}
+
+//  Header animation text style
+.myLogo img {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+main header {
+    font-family: 'Roboto-Bold', sans-serif;
     color: #fff;
-     
+    font-size: 4.5rem;
+}
 
- }
-    #technology{
+.textContent {
+    padding: 2rem 0;
+}
+
+.knowMe {
+    color: #fff;
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+    border: 2px solid #00897B;
+    border-radius: 50px;
+}
+
+.btn:active {
+    color: #fff;
+}
+
+.knowMe:hover {
+    color: #000 !important;
+    background-color: #00897B;
+}
+
+/// my content
+section {
+    width: 100%;
+    padding: 50px 0;
+}
+
+.row {
+    margin: 30px 0;
+}
+
+#intro {}
+
+#intro h1 {
+    color: #fff;
+}
+
+#technology {
     //    background-color:#2d2d35;
-   }
-   .white{
-       color:#fff;
-   }
-   .socialIcon{
-       font-size: 3em;
+}
+
+#openSource {
+    background-color: #2d2d35;
+}
+
+#openSource h1,
+h3,
+p {
+    color: #fff;
+}
+
+.white {
+    color: #fff;
+}
+
+.socialIcon {
+    font-size: 3em;
     padding: 0.5em;
-   }
+}
+
 //    each icon color
-        .ion-social-html5{
-            color: #f16529;
-        }
-        .ion-social-css3{
-            color:#1c88c7;
-        }
-        .ion-social-javascript{
-            color: #f0db4f;
-        }
-        .devicon-bootstrap-plain{
-            color:#563d7c;
-        }
-        .ion-social-sass{
-            color: #cf649a;
-        }
-        .ion-social-angular{
-            color:#C3002F;
-        }
-        .devicon-gulp-plain{
-            color:#D34A47;
-        }
-        .ion-social-github{
-            color:#171515;
-        }
-        .devicon-typescript-plain{
-            color:#0074c1;
-        }
-        .ion-social-nodejs{
-            color:#539E43;
-        }
-        .ion-ionic{
-            color:#4E8DF7;
-        }
+.ion-social-html5 {
+    color: #f16529;
+}
 
+.ion-social-css3 {
+    color: #1c88c7;
+}
 
+.ion-social-javascript {
+    color: #f0db4f;
+}
 
+.devicon-bootstrap-plain {
+    color: #563d7c;
+}
+
+.ion-social-sass {
+    color: #cf649a;
+}
+
+.ion-social-angular {
+    color: #C3002F;
+}
+
+.devicon-gulp-plain {
+    color: #D34A47;
+}
+
+.ion-social-github {
+    color: #171515;
+}
+
+.devicon-typescript-plain {
+    color: #0074c1;
+}
+
+.ion-social-nodejs {
+    color: #539E43;
+}
+
+.ion-ionic {
+    color: #4E8DF7;
+}
 
 // for card 
-.shadow{
-     @include shadow;
-     padding:2rem;
+.shadow {
+    @include shadow;
+    background-color: #fff;
+    padding: 2.5rem;
+    margin-top: 1em;
+    h3,
+    p {
+        color: #000;
+    }
 }
 
- .techIcons{
-     padding:2rem 0;
- }
- .me{
-     width: 10em;
-     height: 10em;
-     margin: 0 auto;
- }
-.icon{
+.techIcons {
+    padding: 2rem 0;
+}
+
+.me {
+    width: 10em;
+    height: 10em;
+    margin: 0 auto;
+}
+
+.icon {
     font-size: 6em;
     padding: 0.5em;
-    
 }
-#footer{
 
- background: #780206;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #061161, #780206);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #061161, #780206); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-     h1{
-    @include font;
-    
-    
-     }
-     .love i{
-        color:red;
-     }
-     .socialMediaFooter{
-         padding:10px;
-         font-size: 0.6em
-     }
+#footer {
+    background: #780206;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #061161, #780206);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #061161, #780206);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    h1 {
+        @include font;
+    }
+    .love i {
+        color: red;
+    }
+    .socialMediaFooter {
+        padding: 10px;
+        font-size: 0.6em
+    }
 }
 
 // animation
@@ -143,15 +208,15 @@ background: linear-gradient(to right, #061161, #780206); /* W3C, IE 10+/ Edge, F
 //     transition: font-size 0.3s ease-in-out;
 // }
 // #technology .devicon-bootstrap-plain:hover{
-   
 //   font-size: 6.5em;
 // }             
-    // screen size less than 768
-@media screen and (max-width :768px ){
-        
-            #intro h1{
-            @include font;
-            font-size: 100px;
-            color: #fff;
-        }
+// screen size less than 768
+@media screen and (max-width :768px) {
+    main header {
+        font-size: 20px;
+    }
+    main header #intro h1 {
+        font-size: 2.7rem;
+        letter-spacing: -0.1rem;
+    }
 }

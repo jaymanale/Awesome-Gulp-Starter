@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){Typed.new("#typed",{stringsElement:document.getElementById("typed-strings"),loop:null,backDelay:1200,typeSpeed:50})}),$('a[href^="#"]').click(function(){var e=$(this).attr("href");return $("html, body").animate({scrollTop:$(e).offset().top},"slow"),!1});
