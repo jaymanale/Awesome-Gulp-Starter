@@ -14,13 +14,18 @@
 }
 
 @mixin font {
-    font-family: 'Starway', sans-serif;
+    font-family: 'Roboto-Light', sans-serif;
 }
 
 @mixin shadow {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
-
+@mixin background-cust-color{
+//  background: #780206;
+//     background: -webkit-linear-gradient(to right, #061161, #780206);
+//     background: linear-gradient(to right, #061161, #780206);
+background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+}
 body {
     font-family: 'Roboto-Light', sans-serif;
 }
@@ -28,13 +33,21 @@ body {
 p {
     font-size: 1.2em;
 }
+// navbar center
+// .navbar .navbar-nav {
+//   display: inline-block;
+//   float: none;
+//   vertical-align: top;
+// }
+
+// .navbar .navbar-collapse {
+//   text-align: center;
+// }
+
+
 
 main header {
-    background: #780206;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #061161, #780206);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #061161, #780206);
+   @include background-cust-color();
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding: 120px 0 60px 0;
 }
@@ -44,6 +57,7 @@ main header {
     width: 150px;
     height: 150px;
     margin: 0 auto;
+    @include shadow();
 }
 
 main header {
@@ -58,20 +72,18 @@ main header {
 
 .knowMe {
     color: #fff;
-    font-size: 1.5rem;
+    @include font();
+    font-size: 1.7rem;
     letter-spacing: 0.3rem;
-    border: 2px solid #00897B;
+    background-color: #D01744;
     border-radius: 50px;
-}
-
-.btn:active {
-    color: #fff;
+    padding:0.6em 2.5em 0.6em 2.5em;
 }
 
 .knowMe:hover {
-    color: #000 !important;
-    background-color: #00897B;
+    color: #fff;
 }
+
 
 /// my content
 section {
@@ -185,12 +197,7 @@ p {
 }
 
 #footer {
-    background: #780206;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #061161, #780206);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #061161, #780206);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    @include background-cust-color();
     h1 {
         @include font;
     }
@@ -201,6 +208,7 @@ p {
         padding: 10px;
         font-size: 0.6em
     }
+    
 }
 
 // animation
