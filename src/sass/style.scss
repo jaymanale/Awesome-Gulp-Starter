@@ -51,7 +51,7 @@ padding:200px 0;
 
  }
     #technology{
-        background-color: blueviolet;
+    //    background-color:#2d2d35;
    }
    .white{
        color:#fff;
@@ -60,6 +60,44 @@ padding:200px 0;
        font-size: 3em;
     padding: 0.5em;
    }
+//    each icon color
+        .ion-social-html5{
+            color: #f16529;
+        }
+        .ion-social-css3{
+            color:#1c88c7;
+        }
+        .ion-social-javascript{
+            color: #f0db4f;
+        }
+        .devicon-bootstrap-plain{
+            color:#563d7c;
+        }
+        .ion-social-sass{
+            color: #cf649a;
+        }
+        .ion-social-angular{
+            color:#C3002F;
+        }
+        .devicon-gulp-plain{
+            color:#D34A47;
+        }
+        .ion-social-github{
+            color:#171515;
+        }
+        .devicon-typescript-plain{
+            color:#0074c1;
+        }
+        .ion-social-nodejs{
+            color:#539E43;
+        }
+        .ion-ionic{
+            color:#4E8DF7;
+        }
+
+
+
+
 // for card 
 .shadow{
      @include shadow;
@@ -100,7 +138,14 @@ background: linear-gradient(to right, #061161, #780206); /* W3C, IE 10+/ Edge, F
      }
 }
 
-                 
+// animation
+// #technology .devicon-bootstrap-plain{
+//     transition: font-size 0.3s ease-in-out;
+// }
+// #technology .devicon-bootstrap-plain:hover{
+   
+//   font-size: 6.5em;
+// }             
     // screen size less than 768
 @media screen and (max-width :768px ){
         
