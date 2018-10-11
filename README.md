@@ -4,22 +4,30 @@ Awesome-Gulp-Starter
 
 ## Installation
 
-1. Clone the repository or download it.
+1. Install Node JS by [clicking here](https://nodejs.org/)
+
+2. Open your command line and Install Gulp globally
+
+```
+npm install gulp-cli -g
+```
+
+3. Clone the repository or download it.
 
 ```elixir
 npm clone https://github.com/jaymanale/Awesome-Gulp-Starter.git
 ```
 
-2. Install the npm dependancy.
+4. Navigate to project directory in command line and Install the npm dependancy.
 
 ```elixir
 npm install
 ```
 
-3. start gulp build process by typing gulp only.
+5. Start gulp build process by typing gulp only.
 
 ```elixir
 gulp
 ```
 
-4. now, build something awesome.
+6. Now, build something awesome.
