@@ -72,3 +72,7 @@ gulp.task('serve', function() {
 //default task
 
 gulp.task('default', ['html', 'css', 'js', 'img', 'watch', 'serve']);
+
+// Prdo Build
+
+gulp.task('build', ['html', 'css', 'js', 'img']);
