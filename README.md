@@ -1,6 +1,6 @@
 # Awesome-Gulp-Starter
 
-Awesome-Gulp-Starter
+Awesome-Gulp-Starter with Shards UI Toolkit
 
 ## Installation
 
