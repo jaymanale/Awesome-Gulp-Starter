@@ -80,7 +80,7 @@ gulp.task('serve', function() {
 
 //default task for Devlopment
 
-gulp.task('default', ['scss-dev', 'js-dev', 'img-dev', 'serve', 'watch']);
+gulp.task('default', ['scss-dev', 'js-dev', 'img-dev', 'watch', 'serve']);
 
 // ################################### Production Build ###############################
 
