@@ -24,10 +24,16 @@ npm clone https://github.com/jaymanale/Awesome-Gulp-Starter.git
 npm install
 ```
 
-5. Start gulp build process by typing gulp only.
+5. Start gulp in Development environment.
 
 ```elixir
 gulp
+```
+
+6. Start gulp build process for production.
+
+```elixir
+gulp build
 ```
 
 6. Now, build something awesome.
